@@ -12,18 +12,18 @@ Console.Write("\nWhich path do you take? (LEFT/RIGHT): ");
 
 String pInput = Console.ReadLine();
 
-while (pInput.ToLower() != "LEFT" && pInput.ToLower() != "RIGHT")
+while (pInput.ToUpper() != "LEFT" && pInput.ToUpper() != "RIGHT")
 {
     Console.WriteLine("\nIn your confusion picking a direction, you trip and fall. Reorienting yourself, you look once more at the fork.");
     Console.Write("\nWhich path do you take? (either \"LEFT\" or \"RIGHT\"): ");
     pInput = Console.ReadLine();
 }
 
-if (pInput.ToLower() == "LEFT")
+if (pInput.ToUpper() == "LEFT")
 {
     Console.WriteLine("\nTrekking down the path, your destination reveals itself as a small bustling town. (END)");
 }
-else if (pInput.ToLower() == "RIGHT")
+else if (pInput.ToUpper() == "RIGHT")
 {
     Console.WriteLine("\nAs you make it further and further along, on the horizon reveals a large mountain. Your journey seems like it won't get easier any time soon... (END)");
 }
